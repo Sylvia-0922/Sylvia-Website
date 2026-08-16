@@ -1,0 +1,11 @@
+B=int(input("How many tickets do you want to buy?"))
+T=int(input("How many tickets are there?"))
+P=int(input("How many tickets did other people buy?"))
+if (P > T):
+    print("Sorry,there are only "+str(T)+" Tickets.Choose a number for P that is <= to "+str(T))
+    P=int(input("How many tickets did other people buy?\n"))
+
+if (B>(T-P)):
+    print("No")
+else:
+    print("Yes"+str(T-B-P)+" Tickets left")
